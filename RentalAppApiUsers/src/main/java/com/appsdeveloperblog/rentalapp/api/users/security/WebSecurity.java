@@ -12,7 +12,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class WebSecurity extends WebSecurityConfigurerAdapter {
 
     private Environment environment;
-
+ //Web Security
     @Autowired
     public WebSecurity(Environment environment) {
         this.environment = environment;
