@@ -1,7 +1,7 @@
 package com.appsdeveloperblog.rentalapp.api.users.controllers;
 
 import com.appsdeveloperblog.rentalapp.api.users.business.abstracts.IndividualCustomerService;
-import com.appsdeveloperblog.rentalapp.api.users.controllers.dtos.IndividualCustomerSearchListDto;
+import com.appsdeveloperblog.rentalapp.api.users.business.dtos.IndividualCustomerSearchListDto;
 import com.appsdeveloperblog.rentalapp.api.users.core.utilities.results.DataResult;
 import com.appsdeveloperblog.rentalapp.api.users.core.utilities.results.Result;
 import com.appsdeveloperblog.rentalapp.api.users.models.individualCustomerRequests.CreateIndividualCustomerRequestModel;

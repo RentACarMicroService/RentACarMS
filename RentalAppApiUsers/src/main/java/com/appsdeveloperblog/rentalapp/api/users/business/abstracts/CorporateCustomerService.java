@@ -1,6 +1,6 @@
 package com.appsdeveloperblog.rentalapp.api.users.business.abstracts;
 
-import com.appsdeveloperblog.rentalapp.api.users.controllers.dtos.CorporateCustomerSearchListDto;
+import com.appsdeveloperblog.rentalapp.api.users.business.dtos.CorporateCustomerSearchListDto;
 import com.appsdeveloperblog.rentalapp.api.users.core.utilities.results.DataResult;
 import com.appsdeveloperblog.rentalapp.api.users.core.utilities.results.Result;
 import com.appsdeveloperblog.rentalapp.api.users.models.corporateCustomerRequests.CreateCorporateCustomerRequestModel;

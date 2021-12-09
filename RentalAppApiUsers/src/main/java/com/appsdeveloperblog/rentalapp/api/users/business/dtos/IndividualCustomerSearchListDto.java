@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.rentalapp.api.users.controllers.dtos;
+package com.appsdeveloperblog.rentalapp.api.users.business.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

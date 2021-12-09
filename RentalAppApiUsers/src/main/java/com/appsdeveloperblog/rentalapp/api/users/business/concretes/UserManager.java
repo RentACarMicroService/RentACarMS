@@ -1,7 +1,7 @@
 package com.appsdeveloperblog.rentalapp.api.users.business.concretes;
 
 import com.appsdeveloperblog.rentalapp.api.users.business.abstracts.UserService;
-import com.appsdeveloperblog.rentalapp.api.users.controllers.dtos.UserSearchListDto;
+import com.appsdeveloperblog.rentalapp.api.users.business.dtos.UserSearchListDto;
 import com.appsdeveloperblog.rentalapp.api.users.core.utilities.mapping.ModelMapperService;
 import com.appsdeveloperblog.rentalapp.api.users.core.utilities.results.*;
 import com.appsdeveloperblog.rentalapp.api.users.dataAccess.UserDao;
