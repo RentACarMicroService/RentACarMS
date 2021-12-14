@@ -1,11 +1,11 @@
 package com.appsdeveloperblog.rentalapp.api.users.dataAccess;
 
-import com.appsdeveloperblog.rentalapp.api.users.entities.User;
+import com.appsdeveloperblog.rentalapp.api.users.entities.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserDao extends JpaRepository<User, Integer> {
+public interface UserDao extends JpaRepository<UserEntity, Integer> {
 
-    User getByEmail(String email);
+    UserEntity findByEmail(String email);
     boolean existsByEmail(String email);
     boolean existsById(int userId);
 

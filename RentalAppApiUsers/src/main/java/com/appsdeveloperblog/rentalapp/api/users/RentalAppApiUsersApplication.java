@@ -36,7 +36,6 @@ public class RentalAppApiUsersApplication {
 
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
-
         return new BCryptPasswordEncoder();
     }
 }

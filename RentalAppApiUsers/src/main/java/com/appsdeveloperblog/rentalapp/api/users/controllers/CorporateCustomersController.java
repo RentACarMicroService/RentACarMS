@@ -15,7 +15,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/corporateCustomers")
+@RequestMapping("/corporateCustomers")
 public class CorporateCustomersController {
 
     private CorporateCustomerService corporateCustomerService;
@@ -25,27 +25,27 @@ public class CorporateCustomersController {
         super();
         this.corporateCustomerService = corporateCustomerService;
     }
-    @GetMapping("/getAll")
+    @GetMapping("getAll")
     public DataResult<List<CorporateCustomerSearchListDto>> getAll() {
         return this.corporateCustomerService.getAll();
     }
 
-    @PostMapping("/save")
+    @PostMapping("save")
     public Result save(@RequestBody @Valid CreateCorporateCustomerRequestModel createCorporateCustomerRequestModel) {
         return this.corporateCustomerService.save(createCorporateCustomerRequestModel);
     }
 
-    @PutMapping("/update")
+    @PutMapping("update")
     public Result update(@RequestBody @Valid UpdateCorporateCustomerRequestModel updateCorporateCustomerRequestModel) {
         return this.corporateCustomerService.update(updateCorporateCustomerRequestModel);
     }
 
-    @DeleteMapping("/delete")
+    @DeleteMapping("delete")
     public Result delete(@RequestBody @Valid DeleteCorporateCustomerRequestModel deleteCorporateCustomerRequestModel){
         return this.corporateCustomerService.delete(deleteCorporateCustomerRequestModel);
     }
 
-    @GetMapping("/getByCorporateCustomerById")
+    @GetMapping("getByCorporateCustomerById")
     public DataResult<CorporateCustomerSearchListDto> getById(int id){
         return this.corporateCustomerService.getById(id);
     }

@@ -14,7 +14,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/individualCustomers")
+@RequestMapping("/individualCustomers")
 public class IndividualCustomersController {
 
     private IndividualCustomerService individualCustomerService;
@@ -30,22 +30,22 @@ public class IndividualCustomersController {
         return this.individualCustomerService.getAll();
     }
 
-    @PostMapping ("/save")
+    @PostMapping ("save")
     public Result save(@RequestBody @Valid CreateIndividualCustomerRequestModel createIndividualCustomerRequestModel) {
         return this.individualCustomerService.save(createIndividualCustomerRequestModel);
     }
 
-    @DeleteMapping("/delete")
+    @DeleteMapping("delete")
     public Result delete(@RequestBody @Valid DeleteIndividualCustomerRequestModel deleteIndividualCustomerRequestModel) {
         return this.individualCustomerService.delete(deleteIndividualCustomerRequestModel);
     }
 
-    @PutMapping("/update")
+    @PutMapping("update")
     public Result update(@RequestBody @Valid UpdateIndividualCustomerRequestModel updateIndividualCustomerRequestModel) {
         return this.individualCustomerService.update(updateIndividualCustomerRequestModel);
     }
 
-    @GetMapping("/getByIndividualCustomerById")
+    @GetMapping("getByIndividualCustomerById")
     public DataResult<IndividualCustomerSearchListDto> getByIndividualCustomerById(int id) {
         return this.individualCustomerService.getByIndividualCustomerId(id);
     }
