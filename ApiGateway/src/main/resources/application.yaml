@@ -80,6 +80,13 @@ spring:
         filters:
         - RewritePath=/users-ws/(?<segment>.*), /$\{segment}
 
+      - id: rentals-ws-all
+        uri: lb://rentals-ws
+        predicates:
+        - Path=/rentals-ws/rentaltypes
+        - Method=GET,POST,PUT,DELETE
+        filters:
+        - RewritePath=/rentals-ws/(?<segment>.*), /$\{segment}
 eureka:
   client:
     service-url:
